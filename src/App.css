@@ -40,3 +40,83 @@
   .read-the-docs {
     color: #888;
   }
+
+ /* จัดวางโปรไฟล์ให้อยู่ตรงกลาง */
+ h5 {
+  color: #1a1a1a; /* MFU red */
+  text-align: center;
+  font-size:   200px; /* Increase the size */
+  font-weight: bold; /* Make it bolder */
+  margin-bottom: 0.5em; /* Keep margin reduced */
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* White background */
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.profile-container img {
+  border-radius: 50%;
+  width: 150px;  /* เพิ่มขนาดรูป */
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profile-container h3, .profile-container p {
+  margin: 10px 0;
+  color: #333;
+  text-align: center;  /* จัดข้อความให้อยู่กลาง */
+}
+
+button {
+  margin-top: 20px;html, body {
+  margin: 0; /* ลบ margin ของ body */
+  padding: 0; /* ลบ padding ของ body */
+  width: 100vw; /* ตั้งค่าให้เต็มจอ */
+  height: 100vh; /* ตั้งค่าให้เต็มจอ */
+  overflow: hidden; /* ปิดการเลื่อน */
+}
+
+#root {
+  width: 100%; /* เปลี่ยนจาก max-width เป็น width */
+  height: 100%; /* ตั้งค่าให้เต็มจอ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* White background */
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* ใช้ความกว้างเต็ม */
+  height: auto; /* ปรับความสูงให้อัตโนมัติ */
+  max-width: none; /* ลบ max-width */
+}
+
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ae8;
+}
